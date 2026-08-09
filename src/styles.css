@@ -869,3 +869,55 @@ h3 {
 .category-list i{font-size:10px;font-style:normal;color:#667180}.category-list strong{font-size:20px;font-weight:500}.category-list svg{transition:transform .3s ease}.category-list>button:hover svg,.category-list>button.active svg{transform:translate(3px,-3px)}
 @media(max-width:800px){.category-navigator-head{margin-bottom:16px}.category-navigator{display:block;margin-bottom:42px}.category-preview{width:100%;min-height:360px;border-radius:20px}.category-preview>span{left:20px;right:20px;bottom:18px}.category-list{margin-top:12px;display:grid;grid-auto-flow:column;grid-auto-columns:74%;overflow-x:auto;scroll-snap-type:x mandatory;border-top:0;gap:8px;padding-bottom:8px;scrollbar-width:none}.category-list::-webkit-scrollbar{display:none}.category-list>button{min-height:70px;padding:0 16px;border:1px solid var(--line);border-radius:14px;scroll-snap-align:start;background:rgba(255,255,255,.025)}.category-list>button.active{padding-left:16px;border-color:rgba(169,194,255,.38)}.category-list>button::after{left:14px;right:14px}.category-list strong{font-size:17px}}
 @media(prefers-reduced-motion:reduce){.category-preview>img,.category-preview>span,.category-list>button,.category-list>button::after{transition:none}}
+.capability-showreel {
+  margin: 0 0 clamp(28px, 4vw, 58px);
+  padding: clamp(18px, 2.2vw, 30px);
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: clamp(24px, 3vw, 40px);
+  background: linear-gradient(145deg, rgba(20, 24, 32, .92), rgba(8, 10, 15, .98));
+  box-shadow: 0 34px 90px rgba(0, 0, 0, .34);
+  overflow: hidden;
+}
+
+.capability-showreel__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 2px 4px clamp(18px, 2vw, 28px);
+}
+
+.capability-showreel__head span,
+.capability-showreel__head small {
+  display: block;
+  color: #8f96a5;
+  font-size: 11px;
+  font-style: normal;
+  letter-spacing: .14em;
+}
+
+.capability-showreel__head h3 {
+  margin: 8px 0 0;
+  color: #f4f6fa;
+  font-size: clamp(26px, 3vw, 44px);
+  font-weight: 500;
+  letter-spacing: .02em;
+  line-height: 1.2;
+}
+
+.capability-showreel__video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: clamp(16px, 2vw, 28px);
+  background: #071a35;
+  object-fit: cover;
+}
+
+@media (max-width: 640px) {
+  .capability-showreel { padding: 12px; }
+  .capability-showreel__head { align-items: flex-start; padding: 6px 4px 16px; }
+  .capability-showreel__head small { margin-top: 4px; text-align: right; }
+  .capability-showreel__video { border-radius: 14px; }
+}

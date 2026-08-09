@@ -829,6 +829,23 @@ export default function App() {
 
       <section className="capabilities-section" id="capabilities">
         <header className="section-head reveal"><div><span>专业能力</span><h2>把复杂的问题，<br />整理成清晰的视觉系统。</h2></div><p>从品牌起点到真实应用</p></header>
+        <article className="capability-showreel reveal">
+          <div className="capability-showreel__head">
+            <div><span>能力概览</span><h3>从判断到落地</h3></div>
+            <small>DESIGN CAPABILITY · 00:23</small>
+          </div>
+          <video
+            className="capability-showreel__video"
+            controls
+            playsInline
+            preload="metadata"
+            poster="/assets/capability/capability-showreel-poster.jpg"
+            aria-label="刘伟琪专业能力动态介绍"
+          >
+            <source src="/assets/capability/capability-showreel.mp4" type="video/mp4" />
+            当前浏览器不支持视频播放。
+          </video>
+        </article>
         <div className="capability-grid">
           <article className="capability-item reveal"><span>品牌策略与识别</span><h3>建立品牌<br />独有的视觉语言</h3><p>梳理品牌定位、核心价值与受众认知，将抽象策略转化为清晰、可持续使用的识别系统。</p><small>品牌定位　标志系统　色彩与字体　VI规范</small></article>
           <article className="capability-item reveal"><span>包装系统设计</span><h3>让产品在货架与<br />屏幕中被看见</h3><p>兼顾信息层级、视觉记忆与系列延展，让包装既有鲜明个性，也能适应真实生产和销售场景。</p><small>包装策略　系列架构　版式系统　应用延展</small></article>
